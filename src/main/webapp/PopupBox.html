@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sweet Alert Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.css" />
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/7.11.0/sweetalert2.all.min.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      swal({
+        title: "Warning!",
+        text: "Admin user name or password wrong!",
+        type: "error", // Set the alert type (can be changed)
+        showConfirmButton: true, // Hide the confirm button
+       
+      }).then(function () {
+        window.location.href = "upAdmin.jsp"; // Redirect to a new page
+      });
+    });
+  </script>
+</body>
+</html>
